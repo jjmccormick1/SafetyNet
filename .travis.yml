@@ -30,7 +30,7 @@ before_script:
 before_install:
   - yes | sdkmanager "platforms;android-28"
   - openssl aes-256-cbc -pass pass:$password -in app/google.enc -out app/google-services.json -d
-  - openssl aes-256-cbc -pass pass:$password -in app/src/main/res/values/secrets.enc -out app/src/main/res/values/secrets.xml$
+  - openssl aes-256-cbc -pass pass:$password -in secrets.enc -out app/src/main/res/values/secrets.xml$
 
 script:
   - ./gradlew build check
