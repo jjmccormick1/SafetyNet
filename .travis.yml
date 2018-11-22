@@ -21,7 +21,7 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
-    - sys-img-armeabi-v7a-google_apis-28
+    - sys-img-arm64-v8a-android-28
 before_script:
   # Prepare pre-accepted licenses to not be promted at installation
   #- mkdir -p "$ANDROID_HOME/licenses"
